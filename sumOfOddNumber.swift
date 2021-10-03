@@ -29,3 +29,9 @@ func rowSumOddNumbers(_ row: Int) -> Int {
     }
     return result
 }
+
+//REAL PEPEGA MODE
+
+func rowSumOddNumbers(_ row: Int) -> Int {
+    return row * row * row
+}

@@ -14,7 +14,6 @@ func maskify(_ string:String) -> String {
         return string
     }
     let index = string.index(string.endIndex, offsetBy: -4)
-    string[..<index]
     return String(repeating: "#", count: string.count - 4) + String(string[index...])
 }
 

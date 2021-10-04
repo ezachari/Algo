@@ -17,3 +17,9 @@ func maskify(_ string:String) -> String {
     string[..<index]
     return String(repeating: "#", count: string.count - 4) + String(string[index...])
 }
+
+
+//VERY CLEAVER... map + joined
+func maskify(_ string:String) -> String {
+  string.enumerated().map { $0 < string.count - 4 ? "#" : "\($1)"}.joined()
+}
